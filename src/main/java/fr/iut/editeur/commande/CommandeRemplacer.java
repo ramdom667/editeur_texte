@@ -15,7 +15,7 @@ public class CommandeRemplacer extends CommandeDocument {
             System.err.println("Format attendu : remplacer;numero char debut;numero char fin;texte");
             return;
         }
-        this.document.remplacer(Integer.parseInt(parameters[2]),Integer.parseInt(parameters[3]),parameters[1]);
+        this.document.remplacer(Integer.parseInt(parameters[1]),Integer.parseInt(parameters[2]),parameters[3]);
         super.executer();
 
     }
