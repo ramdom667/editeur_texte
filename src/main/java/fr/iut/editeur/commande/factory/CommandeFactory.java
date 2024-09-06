@@ -22,6 +22,7 @@ public class CommandeFactory {
             case "remplacer" : return new CommandeRemplacer(document,parameters);
             case "majuscule" : return new CommandeMajuscule(document,parameters);
             case "suppression" : return new CommandeSuppression(document,parameters);
+            case "clear" : return new commandeclear(document,parameters);
             default: return null;
         }
     }
