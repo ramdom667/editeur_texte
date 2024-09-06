@@ -35,4 +35,8 @@ public class Document {
         this.remplacer(debut,fin,partiemaj);
 
     }
+
+    public void suppression(int debut, int fin){
+        this.remplacer(debut,fin,"");
+    }
 }
