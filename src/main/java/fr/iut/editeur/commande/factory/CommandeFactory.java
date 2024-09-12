@@ -16,6 +16,11 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /**
+     *creatCommand permet de crée les command a rentrée dans le terminal
+     *il faut donc crée toujours une nouvelle case pour chaque nouvelles commands
+     */
+
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
